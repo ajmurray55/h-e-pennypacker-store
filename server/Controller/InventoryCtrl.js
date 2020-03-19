@@ -1,8 +1,10 @@
+
+const inventory = require('../../data.json')
+
 module.exports = {
-    getInventory: async (req, res, next) => {
-        const db = req.app.get('db');
-        const {inventory_id} = req.params
-        getInventory = await db.get_inventory(inventory_id)
-        res.status(200).send(getInventory)
-    }
+
+getInventory:(req, res) => {
+     res.status(200).send(inventory)
+}
+
 }

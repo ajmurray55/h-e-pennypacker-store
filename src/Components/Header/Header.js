@@ -1,21 +1,19 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './Header.css'
 
-class Header extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-
-        }
-    }
-
-    render(){
+function Header(){
+ 
         return(
             <header>
-                H.E. PennyPacker's Store
+                <h1 className='title'>H.E. PennyPacker's Store</h1>
             </header>
         )
-    }
-}
+    
+        }
 
 export default Header;
+
+
+
+
+
